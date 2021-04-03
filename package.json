@@ -1,0 +1,37 @@
+{
+  "name": "core_design_system",
+  "version": "1.0.0",
+  "description": "Vuecore Frontend Vue Components",
+  "main": "/dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "serve": "npx webpack serve --mode development",
+    "build": "npm run clean && webpack --mode production"
+  },
+  "author": "huyanh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.3",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

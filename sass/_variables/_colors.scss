@@ -1,0 +1,49 @@
+// Primary Color
+$darker: #3568D4;
+$main-color: #3E7BFA;
+$lighter: #6698FA;
+$outline: #3E7BFA;
+
+
+
+/* System Colors */
+$text_and_background: (
+  "$light": (
+    "dark": (
+      "dark0": #1C1C28,
+      "dark1": #28293D,
+      "dark2": #555770,
+      "dark3": #8F90A6,
+      "dark4": #C7C9D9,
+      "dark_outline": #8F90A6
+    ),
+    "light": (
+      "light0": #E4E4EB,
+      "light1": #EBEBF0,
+      "light2": #F2F2F5,
+      "light3": #FAFAFC,
+      "light4": #FFFFFF,
+      "liht_outline": #E4E4EB
+    )
+  ),
+  "$dark": (
+    "dark": (
+      "dark0": #1C1C28,
+      "dark1": #28293D,
+      "dark2": #555770,
+      "dark3": #8F90A6,
+      "dark4": #C7C9D9,
+      "dark_outline": #8F90A6
+    ),
+    "light": (
+      "light0": #E4E4EB,
+      "light1": #EBEBF0,
+      "light2": #F2F2F5,
+      "light3": #FAFAFC,
+      "light4": #FFFFFF,
+      "light_outline": #C7C9D9
+    )
+  )
+)
+
+/* System Colors */
