@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
     "serve": "npx webpack serve --mode development",
-    "build": "npm run clean && webpack --mode production"
+    "build": "npm run clean && webpack --mode production",
+    "init": "eslint --init"
   },
   "author": "huyanh",
   "license": "ISC",
@@ -17,9 +18,12 @@
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.0",
+    "eslint": "^7.23.0",
+    "eslint-webpack-plugin": "^2.5.3",
     "html-webpack-plugin": "^5.3.1",
     "node-sass": "^5.0.0",
     "postcss-loader": "^5.2.0",
+    "prettier-webpack-plugin": "^1.2.0",
     "rimraf": "^3.0.2",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",

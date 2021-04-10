@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
-import myPlugin from './plugins/myPlugin.js'
-import './sass/main.sass'
+import Vue from "vue";
+import App from "./App.vue";
+import vuecoreA from "./plugins/vuecore.js";
+import "./sass/main.sass";
 
-Vue.use(myPlugin, {}) // options
+Vue.use(vuecoreA, {}); // options
 
 new Vue({
   render: h => h(App)
-}).$mount('#app')
+}).$mount("#app");

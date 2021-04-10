@@ -17,3 +17,7 @@ node_modules/
 public/
 
 plugins/
+
+.vscode
+
+.DS_Store

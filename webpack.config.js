@@ -2,6 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const TerserPlugin = require("terser-webpack-plugin")
+const ESLintPlugin = require('eslint-webpack-plugin')
+const PrettierPlugin = require("prettier-webpack-plugin")
 
 module.exports = {
   entry: './main.js',
@@ -49,12 +51,6 @@ module.exports = {
           'vue-style-loader',
           {
             loader: 'css-loader',
-            options: {
-              modules: {
-                mode: 'local',
-                localIdentName: '[hash:base64:5]'
-              }
-            }
           },
           {
             loader: 'postcss-loader',
@@ -83,7 +79,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html'
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new ESLintPlugin(),
+    new PrettierPlugin()
   ],
   optimization: {
     minimize: true,
