@@ -13,8 +13,7 @@ export default {
 
     // inject some component options
     Vue.mixin({
-      created() {
-      }
+      created() {}
     });
 
     // add an instance method. Usage in component: this.$myMethod()
@@ -27,8 +26,10 @@ export default {
     };
 
     // add an component. Usage in component: <hello-world></hello-world>
-    Vue.component("hello-world", HelloWorld);
+    const Button = () => import("./components/Button.vue");
+    Vue.component("vc-button", Button);
   }
 };
 
-export const Button = () => import(/* webpackExports './components/button.js' */ './components/button.js')
+export const Button = () =>
+  import(/* webpackExports './button.js' */ "./button.js");

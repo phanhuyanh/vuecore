@@ -1,5 +1,7 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <vc-button>Button</vc-button>
+  </div>
 </template>
 
 <script>

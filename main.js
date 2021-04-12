@@ -1,9 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
-import vuecoreA from "./plugins/vuecore.js";
+import vuecore from "./plugins/vuecore.js";
 import "./sass/main.sass";
 
-Vue.use(vuecoreA, {}); // options
+Vue.config.productionTip = false;
+Vue.config.performance = true;
+
+Vue.use(vuecore);
 
 new Vue({
   render: h => h(App)
