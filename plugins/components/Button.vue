@@ -1,5 +1,11 @@
 <template>
-  <button class="vc-button" :class="className" :style="style">
+  <button
+    type="button"
+    :disabled="disabled"
+    class="vc-button"
+    :class="className"
+    :style="style"
+  >
     <slot></slot>
   </button>
 </template>
@@ -29,11 +35,19 @@ export default {
       type: Boolean,
       default: false
     },
-    linePosition: String
+    linePosition: {
+      type: String,
+      default: "bottom"
+    }
   },
   computed: {
     className() {
-      return [`vc-label-text-${this.size}`, `vc-button-${this.color}`];
+      return [
+        `vc-label-text-${this.size}`,
+        `vc-button-${this.color}`,
+        `vc-button-${this.type}`,
+        `line-position-${this.linePosition}`
+      ];
     },
     style() {
       return {
@@ -43,24 +57,3 @@ export default {
   }
 };
 </script>
-
-<style lang="sass">
-@import '../../sass/_variables/_colors'
-
-.vc-button
-  display: block
-  white-space: nowrap
-  text-align: center
-  vertical-align: middle
-  user-select: none
-  border-radius: 4px
-  padding: 5px 12px
-  cursor: pointer
-  border: 1px solid transparent
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-  outline: 0
-
-.vc-button-primary
-  background-color: $main-color
-  color: #fff
-</style>

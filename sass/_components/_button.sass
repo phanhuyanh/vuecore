@@ -1,0 +1,210 @@
+@use '../../sass/_variables/_colors'
+@use '../../sass/_variables/_functions'
+
+/* Button Filled */
+.vc-button-primary.vc-button-filled
+  background-color: $main-color
+  color: get($text_and_background, "$light", "light4")
+  &:focus
+    background-color: $main-color
+    animation: focus-button-filled-primary .2s backwards
+  &:hover
+    background-color: $lighter
+  &:active
+    background-color: $darker
+
+.vc-button-success.vc-button-filled
+  background-color: get($custom_color, "$light", "green1")
+  color: get($text_and_background, "$light", "light4")
+  &:focus
+    background-color: get($custom_color, "$light", "green1")
+    animation: focus-button-filled-success .2s backwards
+  &:hover
+    background-color: get($custom_color, "$light", "green2")
+  &:active
+    background-color: get($custom_color, "$light", "green0")
+
+.vc-button-danger.vc-button-filled
+  background-color: get($custom_color, "$light", "red1")
+  color: get($text_and_background, "$light", "light4")
+  &:focus
+    background-color: get($custom_color, "$light", "red1")
+    animation: focus-button-filled-danger .2s backwards
+  &:hover
+    background-color: get($custom_color, "$light", "red2")
+  &:active
+    background-color: get($custom_color, "$light", "red0")
+
+.vc-button-warning.vc-button-filled
+  background-color: get($custom_color, "$light", "yellow1")
+  color: get($text_and_background, "$light", "light4")
+  &:focus
+    background-color: get($custom_color, "$light", "yellow1")
+    animation: focus-button-filled-warning .2s backwards
+  &:hover
+    background-color: get($custom_color, "$light", "yellow2")
+  &:active
+    background-color: get($custom_color, "$light", "yellow0")
+
+.vc-button-dark.vc-button-filled
+  background-color: get($text_and_background, "$light", "dark1")
+  color: get($text_and_background, "$light", "light4")
+  &:focus
+    background-color: get($text_and_background, "$light", "dark1")
+    animation: focus-button-filled-dark .2s backwards
+  &:hover
+    background-color: get($text_and_background, "$light", "dark2")
+  &:active
+    background-color: get($text_and_background, "$light", "dark0")
+
+.vc-button-info.vc-button-filled
+  background-color: get($custom_color, "$light", "teal1")
+  color: get($text_and_background, "$light", "light4")
+  &:focus
+    background-color: get($custom_color, "$light", "teal1")
+    animation: focus-button-filled-info .2s backwards
+  &:hover
+    background-color: get($custom_color, "$light", "teal2")
+  &:active
+    background-color: get($custom_color, "$light", "teal0")
+ 
+.vc-button-filled
+  &:disabled
+    color: get($text_and_background, "$dark", "dark4")
+    background-color: get($text_and_background, "$light", "light0")
+/* Button Filled */
+
+
+/* Button Outline */
+.vc-button-primary.vc-button-outline
+  border-color: $main-color
+  color: $main-color
+  &:hover
+    background-color: $main-color
+    color: get($text_and_background, "$light", "light4")
+  &:active
+    animation: focus-button-filled-primary .2s backwards
+
+.vc-button-success.vc-button-outline
+  border-color: get($custom_color, "$light", "green1")
+  color: get($custom_color, "$light", "green1")
+  &:hover
+    background-color: get($custom_color, "$light", "green1")
+    color: get($text_and_background, "$light", "light4")
+  &:active
+    animation: focus-button-filled-success .2s backwards
+
+.vc-button-danger.vc-button-outline
+  border-color: get($custom_color, "$light", "red1")
+  color: get($custom_color, "$light", "red1")
+  &:hover
+    color: get($text_and_background, "$light", "light4")
+    background-color: get($custom_color, "$light", "red1")
+  &:active
+    animation: focus-button-filled-danger .2s backwards
+
+.vc-button-warning.vc-button-outline
+  border-color: get($custom_color, "$light", "yellow1")
+  color: get($custom_color, "$light", "yellow1")
+  &:hover
+    color: get($text_and_background, "$light", "dark1")
+    background-color: get($custom_color, "$light", "yellow1")
+  &:active
+    animation: focus-button-filled-warning .2s backwards
+
+.vc-button-dark.vc-button-outline
+  border-color: get($text_and_background, "$light", "dark1")
+  color: get($text_and_background, "$light", "dark1")
+  &:hover
+    color: get($text_and_background, "$light", "light4")
+    background-color: get($text_and_background, "$light", "dark1")
+  &:active
+    animation: focus-button-filled-dark .2s backwards
+
+.vc-button-info.vc-button-outline
+  border-color: get($custom_color, "$light", "teal1")
+  color: get($custom_color, "$light", "teal1")
+  &:hover
+    color: get($text_and_background, "$light", "light4")
+    background-color: get($custom_color, "$light", "teal1")
+  &:active
+    animation: focus-button-filled-info .2s backwards
+
+.vc-button-outline
+  background: none
+  &:disabled
+    border-color: get($text_and_background, "$light", "dark4")
+    color: get($text_and_background, "$light", "dark4")
+/* Button Outline */
+
+/* Button Line*/
+.vc-button-primary.vc-button-line
+  color: $main-color
+  transition: all .3s ease
+  &::before
+    background-color: $subtle
+  &:hover::after
+    width: 100%
+    background-color: $main-color
+  &:hover
+    color: $darker
+
+.vc-button-success.vc-button-line
+  color: get($custom_color, "$light", "green1")
+  transition: all .3s ease
+  &::before
+   background-color: get($custom_color, "$light", "green4")
+  &:hover::after
+    width: 100%
+    background-color: get($custom_color, "$light", "green1")
+  &:hover
+    color: get($custom_color, "$light", "green0")
+    
+    
+.line-position-bottom
+  &::after
+    bottom: -2px
+  &::before
+    bottom: -2px
+
+.line-position-top
+  &::after
+    top: -2px
+  &::before
+    top: -2px
+
+/* Button Line*/
+
+.vc-button
+  display: block
+  white-space: nowrap
+  text-align: center
+  vertical-align: middle
+  user-select: none
+  border-radius: 4px
+  padding: 5px 10px
+  cursor: pointer
+  border: 1px solid transparent
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .2s,outline .2s ease-out
+  outline: 0
+  position: relative
+  &:disabled
+    cursor: none
+    pointer-events: none
+
+.vc-button-line
+  background: none
+  border-radius: 0
+  &::after
+    content: ''
+    position: absolute
+    height: 2px
+    left: 0
+    width: 0%
+    transition: all .3s ease
+  &::before
+    content: ''
+    position: absolute
+    height: 2px
+    left: 0
+    width: 100%
