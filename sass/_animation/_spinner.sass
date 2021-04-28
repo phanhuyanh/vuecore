@@ -1,0 +1,30 @@
+@use '../_variables/_colors'
+@use '../_variables/_functions'
+
+.loading
+  display: inline-block
+  border: 1px solid transparent
+  border-top-color: get($text_and_background, "$light", "light4")
+  border-radius: 50%
+  animation: spinner .5s infinite linear
+  transform: translateZ(0)
+  padding-right: 5px
+
+.loading-size-medium
+  width: 12px
+  height: 12px
+
+.loading-size-large
+  width: 14px
+  height: 14px
+
+.loading-size-small
+  width: 10px
+  height: 10px
+
+@keyframes spinner
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)
+    

@@ -140,7 +140,6 @@
 /* Button Line*/
 .vc-button-primary.vc-button-line
   color: $main-color
-  transition: all .3s ease
   &::before
     background-color: $subtle
   &:hover::after
@@ -151,7 +150,6 @@
 
 .vc-button-success.vc-button-line
   color: get($custom_color, "$light", "green1")
-  transition: all .3s ease
   &::before
    background-color: get($custom_color, "$light", "green4")
   &:hover::after
@@ -159,6 +157,46 @@
     background-color: get($custom_color, "$light", "green1")
   &:hover
     color: get($custom_color, "$light", "green0")
+
+.vc-button-danger.vc-button-line
+  color: get($custom_color, "$light", "red1")
+  &::before
+    background-color: get($custom_color, "$light", "red4")
+  &:hover::after
+    background-color: get($custom_color, "$light", "red1")
+    width: 100%
+  &:hover
+    color: get($custom_color, "$light", "red0")
+
+.vc-button-warning.vc-button-line
+  color: get($custom_color, "$light", "yellow1")
+  &::before
+    background-color: get($custom_color, "$light", "yellow4")
+  &:hover::after
+    background-color: get($custom_color, "$light", "yellow1")
+    width: 100%
+  &:hover
+    color: get($custom_color, "$light", "yellow0")
+
+.vc-button-dark.vc-button-line
+  color: get($text_and_background, "$light", "dark1")
+  &::before
+    background-color: get($text_and_background, "$light", "dark4")
+  &:hover::after
+    background-color: get($text_and_background, "$light", "dark1")
+    width: 100%
+  &:hover
+    color: get($text_and_background, "$light", "dark0")
+
+.vc-button-info.vc-button-line
+  color: get($custom_color, "$light", "teal1")
+  &::before
+    background-color: get($custom_color, "$light", "teal4")
+  &:hover::after
+    background-color: get($custom_color, "$light", "teal1")
+    width: 100%
+  &:hover
+    color: get($custom_color, "$light", "teal0")
     
     
 .line-position-bottom
@@ -176,10 +214,10 @@
 /* Button Line*/
 
 .vc-button
-  display: block
+  display: inline-flex
   white-space: nowrap
-  text-align: center
-  vertical-align: middle
+  align-items: center
+  justify-content: center
   user-select: none
   border-radius: 4px
   padding: 5px 10px
@@ -188,6 +226,7 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .2s,outline .2s ease-out
   outline: 0
   position: relative
+  line-height: 1.5
   &:disabled
     cursor: none
     pointer-events: none
@@ -195,6 +234,7 @@
 .vc-button-line
   background: none
   border-radius: 0
+  transition: all .3s ease
   &::after
     content: ''
     position: absolute
@@ -208,3 +248,7 @@
     height: 2px
     left: 0
     width: 100%
+  &:disabled
+    color: get($text_and_background, "$light", "dark4")
+  &:disabled::before
+    background-color: get($text_and_background, "$light", "light0")

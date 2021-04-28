@@ -6,6 +6,11 @@
     :class="className"
     :style="style"
   >
+    <span
+      v-if="loading"
+      class="loading"
+      :class="[`loading-size-${this.size}`, $slots.default ? 'm-r-5' : '']"
+    ></span>
     <slot></slot>
   </button>
 </template>
@@ -25,7 +30,6 @@ export default {
       type: String,
       default: "filled"
     },
-    loading: Boolean,
     disabled: Boolean,
     icon: String,
     textColor: String,
@@ -38,7 +42,12 @@ export default {
     linePosition: {
       type: String,
       default: "bottom"
-    }
+    },
+    bubble: {
+      type: Boolean,
+      default: true
+    },
+    loading: Boolean
   },
   computed: {
     className() {
@@ -54,6 +63,23 @@ export default {
         color: this.textColor
       };
     }
+  },
+  mounted() {
+    this.$el.addEventListener("click", this.click);
+  },
+  methods: {
+    click(e) {
+      if (!this.bubble) e.stopPropagation();
+      if (this.href) {
+        return window.open(this.href, this.blank ? "" : "_self");
+      }
+      if (this.router && this.$router) {
+        this.$router.push(this.router);
+      }
+    }
+  },
+  beforeDestroy() {
+    this.$el.removeEventListener("click", this.click);
   }
 };
 </script>

@@ -4,7 +4,6 @@ import vuecore from "./plugins/vuecore.js";
 import "./sass/main.sass";
 
 Vue.config.productionTip = false;
-Vue.config.performance = true;
 
 Vue.use(vuecore);
 
