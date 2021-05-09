@@ -47,7 +47,7 @@
     <div class="vuecore-section vuecore-experience-design">
       <div class="container d-flex align-items-center">
         <div class="vuecore-img-vector">
-          <img src="../img/experience_design 1.png" alt="" />
+          <img src="../img/experience_design.png" alt="" />
         </div>
         <div class="vuecore-description">
           <h3>Experience design</h3>
@@ -61,7 +61,7 @@
     <div class="vuecore-section vuecore-layout-design">
       <div class="container d-flex align-items-center flex-direction-row-rv">
         <div class="vuecore-img-vector">
-          <img src="../img/responsive_design 1.png" alt="" />
+          <img src="../img/responsive_design.png" alt="" />
         </div>
         <div class="vuecore-description">
           <h3>Smart Layout, Auto Updating Symbols</h3>
@@ -75,7 +75,7 @@
     <div class="vuecore-section vuecore-performance">
       <div class="container d-flex align-items-center">
         <div class="vuecore-img-vector">
-          <img src="../img/performance 1.png" alt="" />
+          <img src="../img/performance.png" alt="" />
         </div>
         <div class="vuecore-description">
           <h3>Performance</h3>
@@ -89,7 +89,7 @@
     <div class="vuecore-section vuecore-contributors">
       <div class="container d-flex align-items-center flex-direction-row-rv">
         <div class="vuecore-img-vector">
-          <img src="../img/contributors_1.png" alt="" />
+          <img src="../img/contributors.png" alt="" />
         </div>
         <div class="vuecore-description">
           <h3>Contributors Vuecore</h3>
