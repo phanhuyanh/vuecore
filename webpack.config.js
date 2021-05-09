@@ -4,14 +4,27 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const TerserPlugin = require("terser-webpack-plugin")
 const ESLintPlugin = require('eslint-webpack-plugin')
 const PrettierPlugin = require("prettier-webpack-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  entry: './main.js',
+  entry: {
+    main: './main.js',
+    vuecore: {
+      import: './plugins/vuecore.js',
+      library: {
+        // all options under `output.library` can be used here
+        name: 'vuecore',
+        type: 'umd',
+        umdNamedDefine: true,
+      },
+    },
+    css: './sass/main.sass'
+  },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'vuecore',
-    libraryTarget: 'umd'
+    // library: 'vuecore',
+    // libraryTarget: 'umd'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -32,7 +45,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
+          process.env.NODE_ENV !== 'production' ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -48,7 +61,7 @@ module.exports = {
       {
         test: /\.s[a|c]ss$/,
         use: [
-          'vue-style-loader',
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
           },
@@ -90,11 +103,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      template: './public/index.html',
+      chunks: ['main']
     }),
     new VueLoaderPlugin(),
     new ESLintPlugin(),
-    new PrettierPlugin()
+    new PrettierPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'main.css'
+    })
   ],
   optimization: {
     minimize: true,

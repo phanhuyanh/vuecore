@@ -10,8 +10,6 @@ webpack.config.js
 
 src/
 
-dist/
-
 node_modules/
 
 public/
