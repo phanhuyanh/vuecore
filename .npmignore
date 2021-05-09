@@ -18,6 +18,8 @@ public/
 
 plugins/
 
+doc/
+
 .vscode
 
 .DS_Store

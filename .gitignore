@@ -5,3 +5,9 @@
 /.vscode
 
 .DS_Store
+
+/doc
+
+/plugins
+
+/img

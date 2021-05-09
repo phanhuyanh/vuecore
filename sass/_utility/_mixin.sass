@@ -1,0 +1,17 @@
+@import "../_variables/_breakpoint"
+
+@mixin desktop
+  @media screen and ( max-width: $breakpoint-lg)
+    @content
+
+@mixin table
+  @media screen and ( max-width: $breakpoint-md)
+    @content
+
+@mixin mobile
+  @media screen and ( max-width: $breakpoint-sm)
+    @content
+    
+    
+
+  
