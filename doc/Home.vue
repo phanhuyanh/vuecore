@@ -7,7 +7,7 @@
         >
           <div class="logo">
             <router-link to="/" class="d-flex">
-              <img src="../img/logo.svg" alt="" />
+              <img src="https://i.imgur.com/AacG6L7.png" alt="vuecore" />
             </router-link>
           </div>
           <div class="nav">
@@ -22,7 +22,7 @@
           </div>
         </div>
       </header>
-      <div class="vuecore-lib" :style="styleLogo">
+      <div class="vuecore-lib">
         <div class="container full-height d-flex align-items-center">
           <div class="vuecore-lib-content">
             <h1>Vuecore Components</h1>
@@ -36,7 +36,11 @@
                 Documents
               </button>
               <button type="button" class="btn-secondary" @click="linkGitRepo">
-                <img src="../img/github.svg" class="m-r-5" alt="github" />
+                <img
+                  src="https://i.imgur.com/FPo6zxe.png"
+                  class="m-r-5 w-24 h-24"
+                  alt="github"
+                />
                 Github
               </button>
             </div>
@@ -47,7 +51,7 @@
     <div class="vuecore-section vuecore-experience-design">
       <div class="container d-flex align-items-center">
         <div class="vuecore-img-vector">
-          <img src="../img/experience_design.png" alt="" />
+          <img src="https://i.imgur.com/v2gOrFa.png" alt="experience design" />
         </div>
         <div class="vuecore-description">
           <h3>Experience design</h3>
@@ -61,7 +65,7 @@
     <div class="vuecore-section vuecore-layout-design">
       <div class="container d-flex align-items-center flex-direction-row-rv">
         <div class="vuecore-img-vector">
-          <img src="../img/responsive_design.png" alt="" />
+          <img src="https://i.imgur.com/LGyOZ9n.png" alt="responsive design" />
         </div>
         <div class="vuecore-description">
           <h3>Smart Layout, Auto Updating Symbols</h3>
@@ -75,7 +79,7 @@
     <div class="vuecore-section vuecore-performance">
       <div class="container d-flex align-items-center">
         <div class="vuecore-img-vector">
-          <img src="../img/performance.png" alt="" />
+          <img src="https://i.imgur.com/TjOPzV5.png" alt="performance" />
         </div>
         <div class="vuecore-description">
           <h3>Performance</h3>
@@ -89,7 +93,7 @@
     <div class="vuecore-section vuecore-contributors">
       <div class="container d-flex align-items-center flex-direction-row-rv">
         <div class="vuecore-img-vector">
-          <img src="../img/contributors.png" alt="" />
+          <img src="https://i.imgur.com/IfWYNdL.png" alt="" />
         </div>
         <div class="vuecore-description">
           <h3>Contributors Vuecore</h3>
@@ -155,7 +159,7 @@
           </div>
         </div>
         <div class="footer-img-vector">
-          <img src="../img/footer.png" alt="" />
+          <img src="https://i.imgur.com/wYRhhGe.png" alt="" />
         </div>
       </div>
     </footer>
@@ -163,8 +167,6 @@
 </template>
 
 <script>
-import heroImg from "../img/Core-Design-System-Hero-Image-Static.png";
-
 export default {
   data: () => {
     return {
@@ -176,13 +178,6 @@ export default {
         }
       ]
     };
-  },
-  computed: {
-    styleLogo() {
-      return {
-        backgroundImage: `url(${heroImg})`
-      };
-    }
   },
   methods: {
     linkGitRepo() {
