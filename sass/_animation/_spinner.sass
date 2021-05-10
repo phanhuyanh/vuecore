@@ -1,10 +1,7 @@
-@use '../_variables/_colors'
-@use '../_variables/_functions'
-
 .loading
   display: inline-block
   border: 1px solid transparent
-  border-top-color: get($text_and_background, "$light", "light4")
+  border-top-color: var(--light-4)
   border-radius: 50%
   animation: spinner .5s infinite linear
   transform: translateZ(0)

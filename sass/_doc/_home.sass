@@ -1,4 +1,3 @@
-@import "../_variables/_colors"
 @import "../_utility/_mixin"
 
 $subtitle: #28293D
@@ -27,21 +26,21 @@ $subtitle: #28293D
         &:last-child
           margin-right: 0
         &.active
-          border-bottom-color: $main-color
+          border-bottom-color: var(--main-color)
           a
-            color: $main-color
+            color: var(--main-color)
         &:hover
           &::after
             width: 100%
           a
-            color: $main-color
+            color: var(--main-color)
         &::after
           content: ''
           position: absolute
           left: 0
           bottom: -2px
           width: 0%
-          background-color: $main-color
+          background-color: var(--main-color)
           transition: .2s all
           height: 2px
       a
@@ -111,15 +110,15 @@ $subtitle: #28293D
 
   .btn-primary
     color: #fff
-    background-color: $main-color
+    background-color: var(--main-color)
     box-shadow: 0 0 1px 0 rgb(40 41 61 / 4%), 0 2px 4px 0 rgb(96 97 112 / 16%)
     &:hover
-      background-color: $lighter
+      background-color: var(--main-lighter)
       transform: scale(1.02)
 
   .btn-secondary
     background: #fff
-    color: $main-color
+    color: var(--main-color)
     box-shadow: 0 0 1px 0 rgb(40 41 61 / 4%), 0 2px 4px 0 rgb(96 97 112 / 16%)
     &:hover
       transform: scale(1.02)
@@ -141,7 +140,7 @@ $subtitle: #28293D
       width: 100%
     h3
       font-size: 39px
-      color: #28293D
+      color: $subtitle
       font-weight: bold
       line-height: 1.5
       margin-bottom: 15px

@@ -1,202 +1,199 @@
-@use '../../sass/_variables/_colors'
-@use '../../sass/_variables/_functions'
-
 /* Button Filled */
 .vc-button-primary.vc-button-filled
-  background-color: $main-color
-  color: get($text_and_background, "$light", "light4")
+  background-color: var(--main-color)
+  color: var(--light-4)
   &:focus
-    background-color: $main-color
+    background-color: var(--main-color)
     animation: focus-button-filled-primary .2s backwards
   &:hover
-    background-color: $lighter
+    background-color: var(--main-lighter)
   &:active
-    background-color: $darker
+    background-color: var(--main-darker)
 
 .vc-button-success.vc-button-filled
-  background-color: get($custom_color, "$light", "green1")
-  color: get($text_and_background, "$light", "light4")
+  background-color: var(--green-1)
+  color: var(--light-4)
   &:focus
-    background-color: get($custom_color, "$light", "green1")
+    background-color: var(--green-1)
     animation: focus-button-filled-success .2s backwards
   &:hover
-    background-color: get($custom_color, "$light", "green2")
+    background-color: var(--green-2)
   &:active
-    background-color: get($custom_color, "$light", "green0")
+    background-color: var(--green-0)
 
 .vc-button-danger.vc-button-filled
-  background-color: get($custom_color, "$light", "red1")
-  color: get($text_and_background, "$light", "light4")
+  background-color: var(--red-1)
+  color: var(--light-4)
   &:focus
-    background-color: get($custom_color, "$light", "red1")
+    background-color: var(--red-1)
     animation: focus-button-filled-danger .2s backwards
   &:hover
-    background-color: get($custom_color, "$light", "red2")
+    background-color: var(--red-2)
   &:active
-    background-color: get($custom_color, "$light", "red0")
+    background-color: var(--red-0)
 
 .vc-button-warning.vc-button-filled
-  background-color: get($custom_color, "$light", "yellow1")
-  color: get($text_and_background, "$light", "light4")
+  background-color: var(--yellow-1)
+  color: var(--light-4)
   &:focus
-    background-color: get($custom_color, "$light", "yellow1")
+    background-color: var(--yellow-1)
     animation: focus-button-filled-warning .2s backwards
   &:hover
-    background-color: get($custom_color, "$light", "yellow2")
+    background-color: var(--yellow-2)
   &:active
-    background-color: get($custom_color, "$light", "yellow0")
+    background-color: var(--yellow-0)
 
 .vc-button-dark.vc-button-filled
-  background-color: get($text_and_background, "$light", "dark1")
-  color: get($text_and_background, "$light", "light4")
+  background-color: var(--dark-1)
+  color: var(--light-4)
   &:focus
-    background-color: get($text_and_background, "$light", "dark1")
+    background-color: var(--dark-1)
     animation: focus-button-filled-dark .2s backwards
   &:hover
-    background-color: get($text_and_background, "$light", "dark2")
+    background-color: var(--dark-2)
   &:active
-    background-color: get($text_and_background, "$light", "dark0")
+    background-color: var(--dark-0)
 
 .vc-button-info.vc-button-filled
-  background-color: get($custom_color, "$light", "teal1")
-  color: get($text_and_background, "$light", "light4")
+  background-color: var(--teal-1)
+  color: var(--light-4)
   &:focus
-    background-color: get($custom_color, "$light", "teal1")
+    background-color: var(--teal-1)
     animation: focus-button-filled-info .2s backwards
   &:hover
-    background-color: get($custom_color, "$light", "teal2")
+    background-color: var(--teal-2)
   &:active
-    background-color: get($custom_color, "$light", "teal0")
+    background-color: var(--teal-0)
  
 .vc-button-filled
   &:disabled
-    color: get($text_and_background, "$dark", "dark4")
-    background-color: get($text_and_background, "$light", "light0")
+    color: var(--dark-4)
+    background-color: var(--light-0)
 /* Button Filled */
 
 
 /* Button Outline */
 .vc-button-primary.vc-button-outline
-  border-color: $main-color
-  color: $main-color
+  border-color: var(--main-color)
+  color: var(--main-color)
   &:hover
-    background-color: $main-color
-    color: get($text_and_background, "$light", "light4")
+    background-color: var(--main-color)
+    color: var(--light-4)
   &:active
     animation: focus-button-filled-primary .2s backwards
 
 .vc-button-success.vc-button-outline
-  border-color: get($custom_color, "$light", "green1")
-  color: get($custom_color, "$light", "green1")
+  border-color: var(--green-1)
+  color: var(--green-1)
   &:hover
-    background-color: get($custom_color, "$light", "green1")
-    color: get($text_and_background, "$light", "light4")
+    background-color: var(--green-1)
+    color: var(--light-4)
   &:active
     animation: focus-button-filled-success .2s backwards
 
 .vc-button-danger.vc-button-outline
-  border-color: get($custom_color, "$light", "red1")
-  color: get($custom_color, "$light", "red1")
+  border-color: var(--red-1)
+  color: var(--red-1)
   &:hover
-    color: get($text_and_background, "$light", "light4")
-    background-color: get($custom_color, "$light", "red1")
+    color: var(--light-4)
+    background-color: var(--red-1)
   &:active
     animation: focus-button-filled-danger .2s backwards
 
 .vc-button-warning.vc-button-outline
-  border-color: get($custom_color, "$light", "yellow1")
-  color: get($custom_color, "$light", "yellow1")
+  border-color: var(--yellow-1)
+  color: var(--yellow-1)
   &:hover
-    color: get($text_and_background, "$light", "dark1")
-    background-color: get($custom_color, "$light", "yellow1")
+    color: var(--dark-1)
+    background-color: var(--yellow-1)
   &:active
     animation: focus-button-filled-warning .2s backwards
 
 .vc-button-dark.vc-button-outline
-  border-color: get($text_and_background, "$light", "dark1")
-  color: get($text_and_background, "$light", "dark1")
+  border-color: var(--dark-1)
+  color: var(--dark-1)
   &:hover
-    color: get($text_and_background, "$light", "light4")
-    background-color: get($text_and_background, "$light", "dark1")
+    color: var(--light-4)
+    background-color: var(--dark-1)
   &:active
     animation: focus-button-filled-dark .2s backwards
 
 .vc-button-info.vc-button-outline
-  border-color: get($custom_color, "$light", "teal1")
-  color: get($custom_color, "$light", "teal1")
+  border-color: var(--teal-1)
+  color: var(--teal-1)
   &:hover
-    color: get($text_and_background, "$light", "light4")
-    background-color: get($custom_color, "$light", "teal1")
+    color: var(--light-4)
+    background-color: var(--teal-1)
   &:active
     animation: focus-button-filled-info .2s backwards
 
 .vc-button-outline
   background: none
   &:disabled
-    border-color: get($text_and_background, "$light", "dark4")
-    color: get($text_and_background, "$light", "dark4")
+    border-color: var(--dark-4)
+    color: var(--dark-4)
 /* Button Outline */
 
 /* Button Line*/
 .vc-button-primary.vc-button-line
-  color: $main-color
+  color: var(--main-color)
   &::before
-    background-color: $subtle
+    background-color: var(--main-subtle)
   &:hover::after
     width: 100%
-    background-color: $main-color
+    background-color: var(--main-color)
   &:hover
-    color: $darker
+    color: var(--main-darker)
 
 .vc-button-success.vc-button-line
-  color: get($custom_color, "$light", "green1")
+  color: var(--green-1)
   &::before
-   background-color: get($custom_color, "$light", "green4")
+   background-color: var(--green-4)
   &:hover::after
     width: 100%
-    background-color: get($custom_color, "$light", "green1")
+    background-color: var(--green-1)
   &:hover
-    color: get($custom_color, "$light", "green0")
+    color: var(--green-0)
 
 .vc-button-danger.vc-button-line
-  color: get($custom_color, "$light", "red1")
+  color: var(--red-1)
   &::before
-    background-color: get($custom_color, "$light", "red4")
+    background-color: var(--red-4)
   &:hover::after
-    background-color: get($custom_color, "$light", "red1")
+    background-color: var(--red-1)
     width: 100%
   &:hover
-    color: get($custom_color, "$light", "red0")
+    color: var(--red-0)
 
 .vc-button-warning.vc-button-line
-  color: get($custom_color, "$light", "yellow1")
+  color: var(--yellow-1)
   &::before
-    background-color: get($custom_color, "$light", "yellow4")
+    background-color: var(--yellow-4)
   &:hover::after
-    background-color: get($custom_color, "$light", "yellow1")
+    background-color: var(--yellow-1)
     width: 100%
   &:hover
-    color: get($custom_color, "$light", "yellow0")
+    color: var(--yellow-0)
 
 .vc-button-dark.vc-button-line
-  color: get($text_and_background, "$light", "dark1")
+  color: var(--dark-1)
   &::before
-    background-color: get($text_and_background, "$light", "dark4")
+    background-color: var(--dark-4)
   &:hover::after
-    background-color: get($text_and_background, "$light", "dark1")
+    background-color: var(--dark-1)
     width: 100%
   &:hover
-    color: get($text_and_background, "$light", "dark0")
+    color: var(--dark-0)
 
 .vc-button-info.vc-button-line
-  color: get($custom_color, "$light", "teal1")
+  color: var(--teal-1)
   &::before
-    background-color: get($custom_color, "$light", "teal4")
+    background-color: var(--teal-4)
   &:hover::after
-    background-color: get($custom_color, "$light", "teal1")
+    background-color: var(--teal-1)
     width: 100%
   &:hover
-    color: get($custom_color, "$light", "teal0")
+    color: var(--teal-0)
     
     
 .line-position-bottom
@@ -249,6 +246,6 @@
     left: 0
     width: 100%
   &:disabled
-    color: get($text_and_background, "$light", "dark4")
+    color: var(--dark-4)
   &:disabled::before
-    background-color: get($text_and_background, "$light", "light0")
+    background-color: var(--light-0)

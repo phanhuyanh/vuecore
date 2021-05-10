@@ -1,6 +1,0 @@
-@use "sass:string"
-@use "sass:map"
-
-@function get($map, $type, $value) 
-  $key: string.slice($value, 0, string.length($value) - 1)
-  @return map.get($map, $type, $key, $value)
