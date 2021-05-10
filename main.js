@@ -9,6 +9,6 @@ Vue.config.productionTip = false;
 Vue.use(vuecore);
 
 new Vue({
-  render: h => h(App),
-  router
+  router,
+  render: h => h(App)
 }).$mount("#app");
