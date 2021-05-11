@@ -3,53 +3,6 @@
 $subtitle: #28293D
 
 .home 
-  header 
-    display: flex
-    width: 100%
-    justify-content: space-between
-    align-items: center
-    box-shadow: 0 0 16px rgba(0, 0, 0, 10%)
-    .logo
-      img
-        width: 42px
-        height: 42px
-
-    ul
-      list-style: none
-      li
-        border-bottom-color: transparent
-        border-bottom-width: 2px
-        border-bottom-style: solid
-        margin-right: 15px
-        display: flex
-        position: relative
-        &:last-child
-          margin-right: 0
-        &.active
-          border-bottom-color: var(--main-color)
-          a
-            color: var(--main-color)
-        &:hover
-          &::after
-            width: 100%
-          a
-            color: var(--main-color)
-        &::after
-          content: ''
-          position: absolute
-          left: 0
-          bottom: -2px
-          width: 0%
-          background-color: var(--main-color)
-          transition: .2s all
-          height: 2px
-      a
-        text-decoration: none
-        font-size: 14px
-        color: #8F90A6
-        padding: 12px
-        transition: all .2s
-
   .vuecore-lib
     position: relative
     flex: 1
@@ -186,7 +139,54 @@ $subtitle: #28293D
       opacity: .5
       z-index: 0
 
-  footer
+header 
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  box-shadow: 0 0 16px rgba(0, 0, 0, 10%)
+  .logo
+    img
+      width: 42px
+      height: 42px
+
+  ul
+    list-style: none
+    li
+      border-bottom-color: transparent
+      border-bottom-width: 2px
+      border-bottom-style: solid
+      margin-right: 15px
+      display: flex
+      position: relative
+      &:last-child
+        margin-right: 0
+      &.active
+        border-bottom-color: var(--main-color)
+        a
+          color: var(--main-color)
+      &:hover
+        &::after
+          width: 100%
+        a
+          color: var(--main-color)
+      &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: -2px
+        width: 0%
+        background-color: var(--main-color)
+        transition: .2s all
+        height: 2px
+    a
+      text-decoration: none
+      font-size: 14px
+      color: #8F90A6
+      padding: 12px
+      transition: all .2s
+
+footer
     background-color: $subtitle
     clip-path: polygon(0 26%, 100% 0, 100% 100%, 0 100%)
     .footer-img-vector

@@ -33,7 +33,7 @@ export default {
     disabled: Boolean,
     icon: String,
     textColor: String,
-    router: String,
+    router: String | Object,
     href: String,
     blank: {
       type: Boolean,

@@ -1,0 +1,66 @@
+.sidebar
+  height: calc(100vh - 43px)
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  width: 240px
+  min-width: 240px
+  padding-right: 15px
+  padding-left: 15px
+  &:hover
+    overflow-y: scroll
+
+  .search
+    border: 1px dashed var(--dark-outline)
+    display: flex
+    align-items: center
+    border-radius: 4px
+    padding-right: 15px
+    span
+      display: flex
+      height: 100%
+      align-items: center
+      justify-content: center
+      width: 32px
+      min-width: 32px
+    input
+      border: none
+      outline: 0
+      min-height: 32px
+      color: var(--dark-2)
+      display: block
+      flex: 1
+
+  > div
+    margin-bottom: 8px
+    width: 100%
+    &:last-child
+      margin-bottom: 0
+
+  .section
+    h5
+      color: var(--dark-2)
+      font-size: 16px
+      line-height: 1.5
+      font-weight: 700
+    a
+      text-decoration: none
+      color: var(--dark-2)
+      font-size: 16px
+      transition: .3s all
+      line-height: 1.5
+      &:hover
+        color: var(--main-color)
+      &.active
+        color: var(--main-color)
+    ul
+      list-style-type: none
+      padding-left: 15px
+    .sub-section-item
+      margin-top: 5px
+      a
+        font-size: 14px
+        text-transform: capitalize
+        display: block
+        height: 100%
+

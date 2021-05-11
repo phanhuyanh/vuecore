@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 const Home = () => import("./doc/Home.vue");
 const Documents = () => import("./doc/Documents.vue");
+const DocButton = () => import("./doc/DocButton.vue");
 
 const routes = [
   {
@@ -15,7 +16,14 @@ const routes = [
   {
     path: "/docs",
     name: "documents",
-    component: Documents
+    component: Documents,
+    children: [
+      {
+        path: "button",
+        name: "button",
+        component: DocButton
+      }
+    ]
   }
 ];
 

@@ -1,0 +1,55 @@
+$color-prettylights-syntax-constant: #005cc5
+$color-prettylights-syntax-keyword: #d73a49
+$color-prettylights-syntax-entity: #6f42c1
+$color-prettylights-syntax-entity-tag: #22863a
+$color-prettylights-syntax-string: #032f62
+$color-prettylights-syntax-variable: #e36209
+
+code
+  background: var(--light-0)
+  border-radius: 2px
+  padding: 3px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: var(--dark-2)
+  font-weight: normal
+  text-align: center
+
+pre
+  padding: 0px 20px
+  overflow: hidden
+  font-size: 0
+  background-color: #f6f8fa
+  border-radius: 6px
+  word-break: normal
+  white-space: normal
+  line-height: 1.5
+  color: #24292e
+  margin-top: 20px
+  transition: all .4s
+  max-height: 0
+  span
+    font-size: 14px
+  &.pre-show
+    transition: all .4s
+    max-height: 300px
+
+
+.pl-t
+  color: $color-prettylights-syntax-entity-tag
+
+.pl-p, .pl-o
+  color: $color-prettylights-syntax-constant
+
+.pl-s
+  color: $color-prettylights-syntax-string
+
+.pl-k
+  color: $color-prettylights-syntax-keyword
+
+.pl-e
+  color: $color-prettylights-syntax-entity
+
+.pl-v
+  color: $color-prettylights-syntax-variable

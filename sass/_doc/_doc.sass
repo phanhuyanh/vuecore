@@ -1,0 +1,48 @@
+main
+  padding-top: 15px
+  .main-layout
+    height: calc(100vh - 43px)
+    overflow-y: auto
+    display: flex
+    flex: 1
+    flex-direction: column
+  .content
+    color: var(--dark-2)
+    flex: 1
+    display: flex
+    .doc-component
+      max-width: 800px
+      margin: auto
+    .doc-item
+      overflow: hidden
+      margin-bottom: 50px
+      h3
+        display: flex
+        align-items: center
+        transform: translateX(-17px)
+        transition: .3s all
+        width: max-content
+        margin-bottom: 10px
+        font-size: 24px
+        &:hover
+          transform: translateX(0px)
+          a
+            opacity: 1
+      a
+        opacity: 0
+        text-decoration: none
+        color: var(--main-color)
+        font-size: 20px
+        font-weight: 500
+        margin-right: 5px
+      p
+        font-size: 14px
+        margin-bottom: 5px
+
+    .icon-code
+      margin-bottom: 10px
+      span
+        cursor: pointer
+
+  .sidebar-map
+    width: 150px 

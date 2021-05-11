@@ -23,6 +23,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
     // library: 'vuecore',
     // libraryTarget: 'umd'
   },
@@ -30,6 +31,8 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080,
+    publicPath: 'http://localhost:8080/',
+    historyApiFallback: true
   },
   module: {
     rules: [
