@@ -786,6 +786,185 @@
         </pre>
       </div>
     </div>
+    <div class="doc-item">
+      <h3 id="loading">
+        <a href="#loading">#</a>
+        Loading
+      </h3>
+      <p>
+        A loading indicator can be added to a button by prop
+        <code>loading</code> on the Button.
+      </p>
+      <div class="show">
+        <div class="show-code-icon">
+          <IconCode :show.sync="showLoading"></IconCode>
+        </div>
+        <div class="demo">
+          <div class="d-flex align-items-center justify-content-evenly">
+            <vc-button loading size="large">Loading</vc-button>
+            <vc-button loading>Loading</vc-button>
+            <vc-button loading size="small">Loading</vc-button>
+            <vc-button loading></vc-button>
+          </div>
+        </div>
+        <pre :class="{ 'pre-show': showLoading }">
+          <span class="pl-p"><</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-k">&nbsp;loading</span>
+          <span class="pl-k">&nbsp;size</span>
+          <span class="pl-p">=</span>
+          <span class="pl-p">"</span>
+          <span class="pl-s">large</span>
+          <span class="pl-p">"</span>
+          <span class="pl-p">></span>
+          <span>Loading</span>
+          <span class="pl-p"><</span>
+          <span class="pl-p">/</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-p">></span>
+          <br>
+          <span class="pl-p"><</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-k">&nbsp;loading</span>
+          <span class="pl-p">></span>
+          <span>Loading</span>
+          <span class="pl-p"><</span>
+          <span class="pl-p">/</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-p">></span>
+          <br>
+          <span class="pl-p"><</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-k">&nbsp;loading</span>
+          <span class="pl-k">&nbsp;size</span>
+          <span class="pl-p">=</span>
+          <span class="pl-p">"</span>
+          <span class="pl-s">small</span>
+          <span class="pl-p">"</span>
+          <span class="pl-p">></span>
+          <span>Loading</span>
+          <span class="pl-p"><</span>
+          <span class="pl-p">/</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-p">></span>
+          <br>
+          <span class="pl-p"><</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-k">&nbsp;loading</span>
+          <span class="pl-p">></span>
+          <span class="pl-p"><</span>
+          <span class="pl-p">/</span>
+          <span class="pl-t">vc-button</span>
+          <span class="pl-p">></span>
+        </pre>
+      </div>
+    </div>
+    <div class="doc-api doc-item">
+      <h3 id="api">
+        <a href="#api">#</a>
+        API
+      </h3>
+      <p>To get customized button, just set prop <code>property</code>.</p>
+      <div class="doc-table">
+        <table>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Default</th>
+          </tr>
+          <tr>
+            <td class="pl-k">type</td>
+            <td>
+              type of button to use.&nbsp;<span class="pl-v"
+                >filled / outline / line</span
+              >.
+            </td>
+            <td class="pl-t">string</td>
+            <td class="pl-s">filled</td>
+          </tr>
+          <tr>
+            <td class="pl-k">text-color</td>
+            <td>
+              customized text color of button.
+            </td>
+            <td class="pl-t">string</td>
+            <td class="pl-s">_</td>
+          </tr>
+          <tr>
+            <td class="pl-k">color</td>
+            <td>
+              color of button. &nbsp;<span class="pl-v">
+                primary / success / danger / warning / dark / info </span
+              >.
+            </td>
+            <td class="pl-t">string</td>
+            <td class="pl-s">primary</td>
+          </tr>
+          <tr>
+            <td class="pl-k">line-position</td>
+            <td>
+              line position when set type&nbsp;<span class="pl-v">line</span
+              >&nbsp;for button.&nbsp;<span class="pl-v">top / bottom</span
+              >&nbsp;
+            </td>
+            <td class="pl-t">string</td>
+            <td class="pl-s">bottom</td>
+          </tr>
+          <tr>
+            <td class="pl-k">size</td>
+            <td>
+              Set size of button.&nbsp;<span class="pl-v"
+                >large / medium / small</span
+              >
+            </td>
+            <td class="pl-t">string</td>
+            <td class="pl-s">medium</td>
+          </tr>
+          <tr>
+            <td class="pl-k">disabled</td>
+            <td>disabled state of button.</td>
+            <td class="pl-t">boolean</td>
+            <td class="pl-s">false</td>
+          </tr>
+          <tr>
+            <td class="pl-k">bubble</td>
+            <td>determine event click has bubble up.</td>
+            <td class="pl-t">boolean</td>
+            <td class="pl-s">true</td>
+          </tr>
+          <tr>
+            <td class="pl-k">href</td>
+            <td>link href when click button.</td>
+            <td class="pl-t">string</td>
+            <td class="pl-s">_</td>
+          </tr>
+          <tr>
+            <td class="pl-k">blank</td>
+            <td>
+              option whatever open current tap or new tap. Default open current
+              tap
+            </td>
+            <td class="pl-t">boolean</td>
+            <td class="pl-s">false</td>
+          </tr>
+          <tr>
+            <td class="pl-k">router</td>
+            <td>
+              Added router push navigation to button
+            </td>
+            <td class="pl-t">string | object</td>
+            <td class="pl-s">_</td>
+          </tr>
+          <tr>
+            <td class="pl-k">loading</td>
+            <td>set the loading status of button</td>
+            <td class="pl-t">boolean</td>
+            <td class="pl-s">false</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -804,7 +983,9 @@ export default {
       showTextColor: false,
       showSize: false,
       showHref: false,
-      showRouter: false
+      showRouter: false,
+      showLoading: false,
+      showIcon: false
     };
   }
 };

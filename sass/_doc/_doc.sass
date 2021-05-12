@@ -11,7 +11,7 @@ main
     flex: 1
     display: flex
     .doc-component
-      max-width: 800px
+      min-width: 1024px
       margin: auto
     .doc-item
       overflow: hidden
@@ -46,3 +46,27 @@ main
 
   .sidebar-map
     width: 150px 
+
+  table
+    width: 100%
+    font-size: 14px
+    line-height: 1.5
+    padding: 20px 0
+    tr
+      display: flex
+      padding-top: 15px
+      padding-bottom: 15px
+      padding-left: 15px
+      padding-right: 15px
+      border-bottom: 1px dashed var(--dark-outline)
+      th, td
+        flex: 2
+        text-align: start
+        display: flex
+        flex-wrap: wrap
+        flex-shrink: 0
+      th:nth-child(2), td:nth-child(2)
+        flex: 6
+      th:nth-child(n + 4), td:nth-child(n + 4)
+        flex: 1
+          
