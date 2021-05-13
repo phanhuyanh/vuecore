@@ -12,7 +12,7 @@
             <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link to="/docs">Documents</router-link>
+            <router-link :to="{ name: 'button' }">Documents</router-link>
           </li>
         </ul>
       </div>
@@ -23,7 +23,7 @@
       <div class="main-layout">
         <div class="content">
           <router-view></router-view>
-          <div class="sidebar-map"></div>
+          <SidebarMap></SidebarMap>
         </div>
         <footer class="p-t-100 p-b-30 d-flex align-items-center">
           <div class="info flex-1 d-flex justify-content-evenly">
@@ -78,12 +78,20 @@
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";
 import SideBar from "./SideBar.vue";
+import SidebarMap from "./SidebarMap.vue";
 
 export default {
   components: {
     Header,
     Footer,
-    SideBar
+    SideBar,
+    SidebarMap
+  },
+  mounted() {
+    document.body.classList.add("overflow-hidden");
+    this.$once("hook:beforeDestroy", _ =>
+      document.body.classList.remove("overflow-hidden")
+    );
   }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="d-flex align-items-center justify-content-between pad-x-15">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
         <router-link to="/" class="d-flex">
@@ -12,7 +12,7 @@
             <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link to="/docs">Documents</router-link>
+            <router-link :to="{ name: 'button' }">Documents</router-link>
           </li>
         </ul>
       </div>

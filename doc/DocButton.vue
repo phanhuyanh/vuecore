@@ -1,17 +1,11 @@
 <template>
   <div class="doc-button doc-component">
     <div class="doc-header doc-item">
-      <h3 id="buttons">
-        <a href="#buttons" class="anchor-link">#</a>
-        Buttons
-      </h3>
+      <h2>Buttons</h2>
       <p>To trigger an operation.</p>
     </div>
     <div class="doc-item">
-      <h3 id="filled">
-        <a href="#filled">#</a>
-        Filled
-      </h3>
+      <h2 id="filled">Filled</h2>
       <p>
         There are <code>type</code> default of button. You can set directive
         <code>type="filled"</code>.
@@ -124,10 +118,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="outline">
-        <a href="#outline">#</a>
-        Outline
-      </h3>
+      <h2 id="outline">Outline</h2>
       <p>Set directive <code>type="outline"</code>.</p>
       <div class="show">
         <div class="show-code-icon">
@@ -272,10 +263,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="line">
-        <a href="#line">#</a>
-        Line
-      </h3>
+      <h2 id="line">Line</h2>
       <p>Set directive <code>type="line"</code>.</p>
       <div class="show">
         <div class="show-code-icon">
@@ -460,10 +448,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="text-color">
-        <a href="#text-color">#</a>
-        Text color
-      </h3>
+      <h2 id="text-color">Text color</h2>
       <p>
         You can custom text color for button.Need to prop
         <code>text-color</code> for button.
@@ -600,10 +585,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="size">
-        <a href="#size">#</a>
-        Size
-      </h3>
+      <h2 id="size">Size</h2>
       <p>Need to prop <code>size</code> for button.</p>
       <div class="show">
         <div class="show-code-icon">
@@ -656,10 +638,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="href">
-        <a href="#href">#</a>
-        Href
-      </h3>
+      <h2 id="href">Href</h2>
       <p>
         Prop <code>href</code> if operation need next url. Set prop
         <code>blank</code> url will next new tap.
@@ -709,10 +688,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="router">
-        <a href="#router">#</a>
-        Router
-      </h3>
+      <h2 id="router">Router</h2>
       <p>
         Feature support programmatic navigation. Prop <code>router</code> can be
         literal string path or object.
@@ -787,10 +763,7 @@
       </div>
     </div>
     <div class="doc-item">
-      <h3 id="loading">
-        <a href="#loading">#</a>
-        Loading
-      </h3>
+      <h2 id="loading">Loading</h2>
       <p>
         A loading indicator can be added to a button by prop
         <code>loading</code> on the Button.
@@ -860,10 +833,7 @@
       </div>
     </div>
     <div class="doc-api doc-item">
-      <h3 id="api">
-        <a href="#api">#</a>
-        API
-      </h3>
+      <h2 id="api">API</h2>
       <p>To get customized button, just set prop <code>property</code>.</p>
       <div class="doc-table">
         <table>

@@ -1,0 +1,46 @@
+.sidebar-map
+  display: flex
+  position: relative
+  height: max-content
+  .list-title
+    width: 100%
+    position: fixed
+    padding-left: 20px
+    top: 20%
+    transform: translate3d(0, -50%, 0)
+    z-index: 1
+    .bar-map
+      width: 2px
+      height: 100%
+      position: absolute
+      left: 5px
+      top: 0
+      background-color: var(--light-1)
+      border-radius: 3px
+      .thumb
+        position: absolute
+        width: 10px
+        height: 10px
+        left: -4px
+        border-radius: 50%
+        border: 2px solid var(--main-color)
+        top: 4px
+        transition: transform .3s ease
+    ul
+      list-style: none
+      li
+        a
+          font-size: 12px
+          line-height: 1.5
+          text-decoration: none
+          color: currentColor
+          text-transform: capitalize
+          padding: 5px
+          display: flex
+          align-items: center
+          transition: .5s all ease
+          cursor: pointer
+          &:hover
+            color: var(--main-color)
+          &.active
+            color: var(--main-color)

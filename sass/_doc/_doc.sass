@@ -1,11 +1,12 @@
 main
-  padding-top: 15px
   .main-layout
     height: calc(100vh - 43px)
     overflow-y: auto
+    overflow-x: hidden
     display: flex
     flex: 1
     flex-direction: column
+    padding-top: 15px
   .content
     color: var(--dark-2)
     flex: 1
@@ -13,21 +14,14 @@ main
     .doc-component
       min-width: 1024px
       margin: auto
+    .doc-header
+      margin-bottom: 20[x]
     .doc-item
       overflow: hidden
-      margin-bottom: 50px
-      h3
-        display: flex
-        align-items: center
-        transform: translateX(-17px)
-        transition: .3s all
-        width: max-content
-        margin-bottom: 10px
+      padding-bottom: 50px
+      h2
         font-size: 24px
-        &:hover
-          transform: translateX(0px)
-          a
-            opacity: 1
+        margin-bottom: 10px
       a
         opacity: 0
         text-decoration: none

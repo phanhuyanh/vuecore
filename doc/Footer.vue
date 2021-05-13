@@ -1,5 +1,5 @@
 <template>
-  <footer class="p-t-100 p-b-30">
+  <footer class="p-t-100 p-b-30 d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <div class="info flex-1 d-flex justify-content-evenly">
         <div class="social m-r-50">

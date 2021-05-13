@@ -12,7 +12,11 @@
               faster.
             </p>
             <div class="d-flex align-items-center">
-              <button type="button" class="btn-primary m-r-15">
+              <button
+                type="button"
+                class="btn-primary m-r-15"
+                @click="$router.push({ name: 'button' })"
+              >
                 Documents
               </button>
               <button type="button" class="btn-secondary" @click="linkGitRepo">
