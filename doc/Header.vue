@@ -12,7 +12,7 @@
             <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'button' }">Documents</router-link>
+            <router-link :to="{ name: 'why-vuecore' }">Documents</router-link>
           </li>
         </ul>
       </div>

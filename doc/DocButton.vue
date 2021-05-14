@@ -1,5 +1,5 @@
 <template>
-  <div class="doc-button doc-component">
+  <div class="doc-button doc-component doc">
     <div class="doc-header doc-item">
       <h2>Buttons</h2>
       <p>To trigger an operation.</p>

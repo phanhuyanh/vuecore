@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 const Home = () => import("./doc/Home.vue");
 const Documents = () => import("./doc/Documents.vue");
+const WhyVuecore = () => import("./doc/WhyVuecore.vue");
 const DocButton = () => import("./doc/DocButton.vue");
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     name: "documents",
     component: Documents,
     children: [
+      {
+        path: "why-vuecore",
+        name: "why-vuecore",
+        component: WhyVuecore
+      },
       {
         path: "button",
         name: "button",

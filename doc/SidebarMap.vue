@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     init() {
-      let doc = document.querySelector(".doc-component");
+      let doc = document.querySelector(".doc");
       if (!doc) return (this.list = []);
 
       let list = doc.querySelectorAll("[id]");
