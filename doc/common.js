@@ -49,3 +49,10 @@ export const debounce = (func, wait, immediate) => {
 
   return debounced;
 };
+
+export const copyClipboard = text => {
+  navigator.clipboard.writeText(text).then(
+    () => console.log("clipboard success"),
+    () => console.log("clipboard write failed")
+  );
+};

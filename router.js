@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 const Home = () => import("./doc/Home.vue");
 const Documents = () => import("./doc/Documents.vue");
 const WhyVuecore = () => import("./doc/WhyVuecore.vue");
+const GettingStarted = () => import("./doc/GettingStarted.vue");
 const DocButton = () => import("./doc/DocButton.vue");
 
 const routes = [
@@ -23,6 +24,11 @@ const routes = [
         path: "why-vuecore",
         name: "why-vuecore",
         component: WhyVuecore
+      },
+      {
+        path: "getting-started",
+        name: "getting-started",
+        component: GettingStarted
       },
       {
         path: "button",

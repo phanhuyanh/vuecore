@@ -1,17 +1,29 @@
 {
-  "name": "core_design_system",
+  "name": "vuecore",
   "version": "1.0.0",
   "description": "Vuecore Frontend Vue Components",
-  "main": "/dist/main.js",
+  "main": "/dist/vuecore.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
     "serve": "npx webpack serve --mode development",
-    "build": "npm run clean && webpack --mode production",
-    "init": "eslint --init"
+    "build": "npm run clean && webpack --mode production"
   },
   "author": "huyanh",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phanhuyanh/vuecore"
+  },
+  "keywords": [
+    "vuecore",
+    "vue components",
+    "vue UI library",
+    "vue library"
+  ],
+  "bugs": {
+    "url": "https://github.com/phanhuyanh/vuecore/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
@@ -30,15 +42,13 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "terser-webpack-plugin": "^5.1.1",
+    "vue": "^2.6.12",
     "vue-loader": "^15.9.6",
+    "vue-router": "^3.5.1",
     "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "vue": "^2.6.12",
-    "vue-router": "^3.5.1",
-    "vue-template-compiler": "^2.6.12"
   }
 }

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import vuecore from "./plugins/vuecore.js";
+//import { Button } from './plugins/vuecore.js'
 import router from "./router.js";
 import "./sass/main.sass";
 
