@@ -34,7 +34,7 @@
     <div class="doc-item">
       <h2 id="compatible">Compatible</h2>
       <ul>
-        <li>Web app use framwork Vuejs.</li>
+        <li>Web app use framework Vuejs.</li>
         <li>Server-side rendering Vue application.</li>
         <li>Modern browsers.</li>
       </ul>

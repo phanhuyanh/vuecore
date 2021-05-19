@@ -111,48 +111,42 @@ main
     height: 20px
 
 .pre-i
-  padding-left: 15px
-  padding-right: 15px
-  padding-bottom: 15px
+  padding: 15px
   position: relative
   color: #24292e
   &:hover
     .copy-clipboard
       opacity: 1
 
-.copy-clipboard
-  position: absolute
-  right: 10px
-  top: 10px
-  cursor: pointer
-  opacity: 0
-  transition: opacity .3s ease
+.frame-bg
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+  grid-column-gap: 15px
+  align-items: center
+  background-color: var(--light-3)
+  padding: 20px
+  border-radius: 20px
+  .rect-item
+    line-height: 1.5
+  .rect-label
+    font-size: 16px
+    margin-bottom: 5px
+  .rect-board
+    background-color: var(--light-4)
+    height: 100px
+    width: 100%
+    border-radius: 8px
+    margin-bottom: 5px
+  .rect-val
+    color: #1C1C28
+    font-weight: 500
+    margin-left: 15px
+    letter-spacing: .2px
+  .fm-rgb, .fm-hsl, .fm-hex, .fm-var
+    display: flex
+    align-items: center
+    font-size: 13px
+  .fm-hex .rect-val
+    text-transform: uppercase
+  
 
-// .next-step
-//   display: flex
-//   align-items: center
-//   .link-step
-//     margin-left: auto
-//     font-size: 12px
-//     line-height: 1.5
-//     display: flex
-//     align-items: center
-//     cursor: pointer
-//     color: var(--main-color)
-//     &:hover
-//       a
-//         color: var(--main-lighter)
-//       svg
-//         path
-//           fill: var(--main-lighter)
-//     a
-//       text-decoration: none
-//       color: var(--main-color)
-//       transition: all .3s ease
-//     span
-//       display: flex
-//       align-items: center
-//       justify-content: center
-//       svg
-//         width: 10px
-//         height: 10px

@@ -28,16 +28,14 @@
     </div>
     <div class="doc-item">
       <h2 id="installation">Installation</h2>
-      <pre class="pre-i pre-show" style="padding-bottom: 0;">
+      <p>
+        I can use <a href="https://nodejs.org/en/">npm</a> or
+        <a href="https://classic.yarnpkg.com/en/docs/install/">yarn</a>.
+      </p>
+      <pre class="pre-i pre-show">
         <span>npm i vuecore</span>
         <br>
         <span>yarn add vuecore</span>
-        <span class="copy-clipboard" title="copy" @click="copyClipboard('npm i vuecore')">
-          <svg width="20" height="20" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.19444 1.94434H2.91667C2.80616 1.94434 2.70018 1.98823 2.62204 2.06637C2.5439 2.14451 2.5 2.2505 2.5 2.361V9.02767C2.5 9.13818 2.5439 9.24416 2.62204 9.3223C2.70018 9.40044 2.80616 9.44434 2.91667 9.44434H8.19444C8.30495 9.44434 8.41093 9.40044 8.48907 9.3223C8.56721 9.24416 8.61111 9.13818 8.61111 9.02767V2.361C8.61111 2.2505 8.56721 2.14451 8.48907 2.06637C8.41093 1.98823 8.30495 1.94434 8.19444 1.94434V1.94434ZM8.05556 8.88878H3.05556V2.49989H8.05556V8.88878Z" fill="#3E7BFA"/>
-            <path d="M7.2222 0.972331C7.2222 0.861824 7.1783 0.755843 7.10016 0.677703C7.02202 0.599563 6.91604 0.555664 6.80553 0.555664H1.52775C1.41724 0.555664 1.31126 0.599563 1.23312 0.677703C1.15498 0.755843 1.11108 0.861824 1.11108 0.972331V7.639C1.11108 7.7495 1.15498 7.85549 1.23312 7.93363C1.31126 8.01177 1.41724 8.05566 1.52775 8.05566H1.66664V1.11122H7.2222V0.972331Z" fill="#3E7BFA"/>
-          </svg>
-        </span>
       </pre>
     </div>
     <div class="doc-item">

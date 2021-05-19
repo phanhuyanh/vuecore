@@ -7,6 +7,7 @@ const Home = () => import("./doc/Home.vue");
 const Documents = () => import("./doc/Documents.vue");
 const WhyVuecore = () => import("./doc/WhyVuecore.vue");
 const GettingStarted = () => import("./doc/GettingStarted.vue");
+const DocColors = () => import("./doc/DocColors.vue");
 const DocButton = () => import("./doc/DocButton.vue");
 
 const routes = [
@@ -29,6 +30,11 @@ const routes = [
         path: "getting-started",
         name: "getting-started",
         component: GettingStarted
+      },
+      {
+        path: "colors",
+        name: "colors",
+        component: DocColors
       },
       {
         path: "button",
