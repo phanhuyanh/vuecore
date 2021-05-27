@@ -9,6 +9,7 @@ const WhyVuecore = () => import("./doc/WhyVuecore.vue");
 const GettingStarted = () => import("./doc/GettingStarted.vue");
 const DocColors = () => import("./doc/DocColors.vue");
 const DocButton = () => import("./doc/DocButton.vue");
+const DocTypography = () => import("./doc/DocTypography.vue");
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
         path: "colors",
         name: "colors",
         component: DocColors
+      },
+      {
+        path: "typography",
+        name: "typography",
+        component: DocTypography
       },
       {
         path: "button",

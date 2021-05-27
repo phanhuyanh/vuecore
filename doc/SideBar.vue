@@ -36,7 +36,7 @@
           <router-link :to="{ name: 'colors' }">Colors</router-link>
         </li>
         <li class="sub-section-item">
-          <router-link :to="{ name: 'typograph' }">Typograph</router-link>
+          <router-link :to="{ name: 'typography' }">Typography</router-link>
         </li>
         <li class="sub-section-item">
           <router-link :to="{ name: 'elevation' }">Elevation</router-link>
