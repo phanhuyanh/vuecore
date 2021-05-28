@@ -3,25 +3,25 @@
     <div class="doc-item">
       <h2 id="display">Display</h2>
       <div class="typo-content">
-        <h5 class="vc-display-1">Display 1</h5>
-        <h5 class="vc-display-2">Display 2</h5>
+        <div class="vc-display-1">Display 1</div>
+        <div class="vc-display-2">Display 2</div>
       </div>
     </div>
     <div class="doc-item">
       <h2 id="headline">Headline</h2>
       <div class="typo-content">
-        <h5 class="vc-headline-1">Healine 1</h5>
-        <h5 class="vc-headline-2">Healine 2</h5>
-        <h5 class="vc-headline-3">Healine 3</h5>
-        <h5 class="vc-headline-4">Healine 4</h5>
-        <h5 class="vc-headline-5">Healine 5</h5>
-        <h5 class="vc-headline-6">Healine 6</h5>
+        <div class="vc-headline-1">Healine 1</div>
+        <div class="vc-headline-2">Healine 2</div>
+        <div class="vc-headline-3">Healine 3</div>
+        <div class="vc-headline-4">Healine 4</div>
+        <div class="vc-headline-5">Healine 5</div>
+        <div class="vc-headline-6">Healine 6</div>
       </div>
     </div>
     <div class="doc-item">
       <h2 id="lead">Lead</h2>
       <div class="typo-content">
-        <h5 class="vc-lead">Silver mist suffused the deck of the ship.</h5>
+        <div class="vc-lead">Silver mist suffused the deck of the ship.</div>
       </div>
     </div>
     <div class="doc-item">
