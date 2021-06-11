@@ -10,6 +10,7 @@ const GettingStarted = () => import("./doc/GettingStarted.vue");
 const DocColors = () => import("./doc/DocColors.vue");
 const DocButton = () => import("./doc/DocButton.vue");
 const DocTypography = () => import("./doc/DocTypography.vue");
+const DocAccordion = () => import("./doc/DocAccordion.vue");
 
 const routes = [
   {
@@ -46,6 +47,11 @@ const routes = [
         path: "button",
         name: "button",
         component: DocButton
+      },
+      {
+        path: "acccordion",
+        name: "accordion",
+        component: DocAccordion
       }
     ]
   }

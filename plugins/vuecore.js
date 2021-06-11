@@ -28,6 +28,11 @@ export default {
     // add an component. Usage in component: <hello-world></hello-world>
     const Button = () => import("./components/Button.vue");
     Vue.component("vc-button", Button);
+
+    const Accordion = () => import("./components/Accordion.vue");
+    const AccordionItem = () => import("./components/AccordionItem.vue");
+    Vue.component("vc-accordion", Accordion);
+    Vue.component("vc-accordion-item", AccordionItem);
   }
 };
 
@@ -38,4 +43,18 @@ const Button = {
   }
 };
 
-export { Button };
+const Accordion = {
+  install(Vue) {
+    const Accordion = () => import("./components/Accordion.vue");
+    Vue.component("vc-accordion", Accordion);
+  }
+};
+
+const AccordionItem = {
+  install(Vue) {
+    const AccordionItem = () => import("./components/AccordionItem.vue");
+    Vue.component("vc-accordion-item", AccordionItem);
+  }
+};
+
+export { Button, Accordion, AccordionItem };
