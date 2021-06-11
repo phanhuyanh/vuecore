@@ -28,12 +28,13 @@ pre
   color: #24292e
   margin-top: 20px
   transition: all .4s
-  max-height: 0
+  display: none
   span
     font-size: 14px
+    &.text
+      display: block
   &.pre-show
-    transition: all .4s
-    max-height: 300px
+    display: block
 
 
 .pl-t
@@ -53,3 +54,8 @@ pre
 
 .pl-v
   color: $color-prettylights-syntax-variable
+
+@for $i from 1 through 5
+  .pl-tab-#{$i}
+    padding-left: 15px * $i
+   
