@@ -149,7 +149,7 @@
             <th>Default</th>
           </tr>
           <tr>
-            <td class="pl-k">closeable</td>
+            <td class="pl-k">closable</td>
             <td>Whether a close (x) button is unvisible</td>
             <td class="pl-t">boolean</td>
             <td class="pl-s">false</td>

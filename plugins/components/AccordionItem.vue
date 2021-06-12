@@ -11,7 +11,7 @@
       </slot>
       <div
         class="accordion-item-icon"
-        v-if="!closeable"
+        v-if="!closable"
         :class="{ active: show }"
       >
         <span aria-hidden="true">
@@ -39,7 +39,7 @@
 <script>
 export default {
   props: {
-    closeable: {
+    closable: {
       type: Boolean,
       default: false
     },
