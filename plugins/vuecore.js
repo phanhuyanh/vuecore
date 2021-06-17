@@ -33,6 +33,9 @@ export default {
     const AccordionItem = () => import("./components/AccordionItem.vue");
     Vue.component("vc-accordion", Accordion);
     Vue.component("vc-accordion-item", AccordionItem);
+
+    const Alert = () => import("./components/Alert.vue");
+    Vue.component("vc-alert", Alert);
   }
 };
 
@@ -57,4 +60,11 @@ const AccordionItem = {
   }
 };
 
-export { Button, Accordion, AccordionItem };
+const Alert = {
+  install(Vue) {
+    const Alert = () => import("./components/Alert.vue");
+    Vue.component("vc-alert", Alert);
+  }
+};
+
+export { Button, Accordion, AccordionItem, Alert };

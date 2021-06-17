@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion" :style="styleAccordion">
+  <div class="vc-accordion" :style="styleAccordion">
     <slot name="default"></slot>
   </div>
 </template>
@@ -16,9 +16,6 @@ export default {
       type: Boolean,
       default: true
     }
-  },
-  mounted() {
-    console.log(this.$slots, "slots");
   }
 };
 </script>
