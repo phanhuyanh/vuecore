@@ -1,0 +1,54 @@
+.vc-alert-info
+  background-color: var(--main-subtle)
+  border-left-color: var(--main-color)
+
+.vc-alert-success
+  background-color: var(--green-4)
+  border-left-color: var(--green-0)
+
+.vc-alert-error
+  background-color: var(--red-4)
+  border-left-color: var(--red-0)
+
+.vc-alert-warning
+  background-color: var(--yellow-4)
+  border-left-color: var(--yellow-0)
+
+.vc-alert
+  padding: 15px
+  overflow: hidden
+  border-radius: 4px
+  position: relative
+  border-left-width: 4px
+  border-left-style: solid
+  color: var(--dark-2)
+  line-height: 1.5
+
+.vc-alert-head
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+
+.vc-alert-title
+  color: var(--main-secondary)
+  font-weight: 600
+  font-size: 15px
+  display: flex
+  align-items: center
+
+.vc-alert-close
+  margin-left: 10px
+  padding: 4px
+  cursor: pointer
+  opacity: .5
+  transition: .5s
+  &:hover
+    opacity: 1
+  span
+    display: flex
+    align-items: center
+    justify-content: center
+
+.vc-alert-body
+  font-size: 14px

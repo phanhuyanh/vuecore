@@ -11,6 +11,7 @@ const DocColors = () => import("./doc/DocColors.vue");
 const DocButton = () => import("./doc/DocButton.vue");
 const DocTypography = () => import("./doc/DocTypography.vue");
 const DocAccordion = () => import("./doc/DocAccordion.vue");
+const DocAlert = () => import("./doc/DocAlert.vue");
 
 const routes = [
   {
@@ -52,6 +53,11 @@ const routes = [
         path: "acccordion",
         name: "accordion",
         component: DocAccordion
+      },
+      {
+        path: "alert",
+        name: "alert",
+        component: DocAlert
       }
     ]
   }
